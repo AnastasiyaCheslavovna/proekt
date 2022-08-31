@@ -140,6 +140,7 @@ h1 {
     line-height: 75px;
     color: #FFFFFF;
     text-align: center;
+    margin-top: 130px;
 }
 
 .subtitle__banner {
@@ -275,6 +276,7 @@ h1 {
 
 .features {
     padding: 0 15px;
+    margin-top: 115px;
 }
 
 .features__wrapper {
@@ -378,7 +380,6 @@ h1 {
 }
 
 .work {
-    height: 678px;
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 15px;
@@ -389,6 +390,7 @@ h1 {
 .work ul {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .work li {
@@ -408,13 +410,33 @@ h1 {
     background-image: url(../img/work_3.png);
 }
 
+.work__3:hover .inner__content {
+    background: rgba(255, 67, 67, 0.8)
+}
+
+.work__3:active .inner__content {
+    background: rgba(185, 12, 12, 0.8)
+}
+
+.inner__content {
+    height: 100%;
+}
+
+.work__3:hover .inner__content .work-text,
+.work__3:hover .inner__content .work-text2,
+.work__3:active .inner__content .work-text,
+.work__3:active .inner__content .work-text2 {
+    opacity: 1;
+}
+
+
 .work-text {
     opacity: 0;
     font-family: "Raleway", sans-serif;
     font-weight: 900;
     font-size: 24px;
     line-height: 28px;
-    margin-top: 110px;
+    padding-top: 110px;
     align-items: center;
     text-align: center;
     color: #FFFFFF;
@@ -430,33 +452,6 @@ h1 {
     color: #FFFFFF;
     margin-top: 22px;
 }
-
-.work__3:hover {
-    background-image: linear-gradient(to bottom(255, 67, 67, 0.8), rgba(225, 67, 67, 0.8));
-    border: 2px solid #FFFFFF;
-}
-
-.work__3:active {
-    background-image: linear-gradient rgba(185, 12, 12, 0.8);
-    border: 2px solid #FFFFFF;
-}
-
-.work-text:hover {
-    opacity: 1;
-}
-
-.work-text2:hover {
-    opacity: 1;
-}
-
-.work-tex:active {
-    opacity: 1;
-}
-
-.work-text2:active {
-    opacity: 1;
-}
-
 .work__4 {
     background-image: url(../img/work_4.png);
 }
@@ -498,6 +493,7 @@ h1 {
     .work ul {
         display: flex;
         flex-wrap: wrap;
+        margin-top: 35px;
     }
 
     .work li {
@@ -657,7 +653,8 @@ h1 {
 .testimonials {
     max-width: 1200px;
     margin: 0 auto;
-    height: 535px;
+    margin-top: 115px;
+
 }
 
 .testimonials__img {
