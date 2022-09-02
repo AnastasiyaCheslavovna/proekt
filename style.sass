@@ -1,0 +1,926 @@
+$var1: #FFFFFF
+$var2: #E71414
+$var3: #BABBC5
+$var4: #FF4343
+$var5: #ffffff
+$var6: #2D3033
+$var7: #6C7279
+$var8: #5C3249
+$var9: #7E5D6F
+$var10: #000000
+$var11: #353C65
+$var12: #2C3154
+$var13: #808080
+
+/* reset */
+
+*, *::before, *::after 
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	border: 0
+
+a 
+	text-decoration: none
+	&:active 
+		color: @var2
+	
+	&:hover 
+		color: @var1
+	
+
+ul, ol, li 
+	list-style: none
+
+img 
+	vertical-align: top
+
+h1, h2, h3, h4, h5, h6 
+	font-weight: inherit
+	font-size: inherit
+
+html, body 
+	height: 100%
+
+.banner 
+	background-image: linear-gradient(to bottom, rgb(37 43 73 
+	width: 100%
+	margin: 0 auto
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	height: 747px
+
+header 
+	max-width: 1200px
+	margin: 0 auto
+	padding: 0 15px
+	display: flex
+	flex-flow: row nowrap
+	justify-content: flex-start
+	align-items: center
+	height: 75px
+	width: 100%
+
+.logo 
+	margin-left: 170px
+
+a 
+	color: @var1
+
+.menu 
+	margin: 0 auto
+	cursor: pointer
+	ul 
+		font-family: "Raleway", sans-serif
+		font-weight: 700
+		font-size: 13px
+		line-height: 15px
+		display: flex
+		align-items: center
+		text-align: center
+		color: @var1
+	
+	li 
+		margin-right: 20px
+	
+	li 
+		margin-right: 0
+	
+	ul 
+		display: none
+	
+
+.burger__menu 
+	display: none
+	&::before 
+		content: ''
+		position: absolute
+		background-color: @var5
+		width: 100%
+		height: 2px
+		left: 0
+		top: 10px
+	
+	&::after 
+		content: ''
+		position: absolute
+		background-color: @var5
+		width: 100%
+		height: 2px
+		left: 0
+	
+	&-tab 
+		position: absolute
+		background-color: @var5
+		width: 100%
+		height: 2px
+		left: 0
+		top: 19px
+	
+
+.tab__button 
+	width: 134px
+	height: 3px
+	background: @var3
+	width: 15%
+	&:hover 
+		background: @var3
+	
+	&:active 
+		background: @var2
+	
+
+.line__separator 
+	border: 1px solid @var3
+	margin: 0 auto
+	width: 100%
+	position: absolute
+	left: 0
+	border-bottom: none
+
+.wrapper__banner 
+	display: flex
+	align-items: center
+	text-align: center
+
+h1 
+	font-family: "Raleway", sans-serif
+	font-weight: 900
+	font-size: 64px
+	line-height: 75px
+	color: @var1
+	text-align: center
+	margin-top: 130px
+
+.subtitle__banner 
+	font-family: "Raleway", sans-serif
+	font-size: 24px
+	line-height: 28px
+	color: @var1
+	text-align: center
+	margin-top: 31.43px
+
+.tab__banner 
+	background-color: @var4
+	height: 77.57px
+	width: 40%
+	font-family: "Raleway", sans-serif
+	font-weight: 900
+	font-size: 24px
+	line-height: 28px
+	color: @var1
+	margin-top: 79.57px
+	display: block
+	margin-left: auto
+	margin-right: auto
+	&:hover 
+		background-color: @var2
+	
+	&:active 
+		background-color: @var4
+		box-shadow: 4px 4px 30px @var4
+	
+
+media (max-width: 1024px) 
+	margin: 0 auto
+
+.logo 
+	margin-left: 10px
+
+.banner 
+	margin: 0 auto
+
+.line__separator 
+	right: 20px
+	left: 20px
+	width: 90%
+
+h1 
+	font-size: 48px
+	line-height: 56px
+
+.tab__banner 
+	display: block
+	margin-left: auto
+	margin-right: auto
+
+media (max-width: 768px) 
+	margin: 0 auto
+
+.burger__menu 
+	display: block
+	position: absolute
+	float: right
+	width: 24px
+	height: 18px
+	right: 35px
+
+.line__separator 
+	display: none
+
+h1 
+	font-size: 36px
+	line-height: 42px
+	margin-top: 70px
+
+.tab__banner 
+	display: block
+	margin-left: auto
+	margin-right: auto
+
+.features 
+	padding: 0 15px
+	margin-top: 115px
+	&__wrapper 
+		text-align: center
+		max-width: 1200px
+		padding: 0 15px
+		margin: 0 auto
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+	
+	&__content 
+		width: 33.33%
+	
+	&__img 
+		border-radius: 100px
+		width: 100px
+		height: 100px
+	
+	&__title 
+		font-family: "Raleway", sans-serif
+		font-weight: 900
+		font-size: 24px
+		line-height: 28px
+		text-align: center
+		color: @var6
+	
+	&__subtitle 
+		font-family: "Raleway", sans-serif
+		font-size: 18px
+		line-height: 21px
+		color: @var7
+	
+	&__wrapper 
+		margin: 0 auto
+	
+	&__content 
+		width: 33.33%
+	
+	&__img 
+		width: 85px
+		height: 83.97px
+	
+	&__title 
+		font-size: 18px
+		line-height: 21px
+	
+	&__subtitle 
+		font-size: 14px
+		line-height: 16px
+	
+	&__wrapper 
+		margin: 0 auto
+	
+	&__content 
+		width: 100%
+	
+	&__img 
+		width: 75px
+		height: 74px
+	
+	&__title 
+		font-size: 18px
+		line-height: 21px
+	
+	&__subtitle 
+		font-size: 14px
+		line-height: 16px
+	
+
+media (max-width: 1024px) 
+	padding: 0 15px
+
+media (max-width: 768px) 
+	padding: 0 15px
+	flex-wrap: wrap
+	justify-content: center
+
+.work 
+	margin: 0 auto
+	max-width: 1200px
+	padding: 0 15px
+	width: 100%
+	margin-top: 133px
+	ul 
+		display: flex
+		flex-wrap: wrap
+	
+	li 
+		width: 25%
+		height: 340px
+	
+	&__1 
+		background-image: url(..
+	
+	&__2 
+		background-image: url(..
+	
+	&__3 
+		background-image: url(..
+		&:hover .inner__content 
+			background: rgba(255, 67, 67, 0.8)
+		
+		&:active .inner__content 
+			background: rgba(185, 12, 12, 0.8)
+		
+		&:hover .inner__content .work-text, &:hover .inner__content .work-text2, &:active .inner__content .work-text, &:active .inner__content .work-text2 
+			opacity: 1
+		
+	
+	&-text 
+		opacity: 0
+		font-family: "Raleway", sans-serif
+		font-weight: 900
+		font-size: 24px
+		line-height: 28px
+		padding-top: 110px
+		align-items: center
+		text-align: center
+		color: @var1
+		&2 
+			opacity: 0
+			font-family: "Raleway", sans-serif
+			font-size: 18px
+			line-height: 21px
+			align-items: center
+			text-align: center
+			color: @var1
+			margin-top: 22px
+		
+	
+	&__4 
+		background-image: url(..
+	
+	&__5 
+		background-image: url(..
+	
+	&__6 
+		background-image: url(..
+	
+	&__7 
+		background-image: url(..
+	
+	&__8 
+		background-image: url(..
+	
+	li 
+		width: 25%
+		height: 230px
+	
+	ul 
+		display: flex
+		flex-wrap: wrap
+		margin-top: 35px
+	
+	li 
+		width: 50%
+		background-size: cover
+	
+
+.inner__content 
+	height: 100%
+
+media (max-width: 1024px) 
+	margin: 0 auto
+
+media (max-width: 768px) 
+	margin: 0 auto
+	max-width: 1200px
+
+.our__team 
+	max-width: 1200px
+	margin: 0 auto
+	padding: 0 15px
+	display: flex
+	justify-content: space-between
+	margin-top: 114px
+	width: 100%
+
+.person__card 
+	width: 25%
+
+.person__photo 
+	width: 95%
+
+.user__name 
+	font-family: "Raleway", sans-serif
+	font-weight: 700
+	font-size: 24px
+	line-height: 28px
+	color: @var6
+
+.user__job 
+	font-family: "Raleway", sans-serif
+	font-size: 18px
+	line-height: 21px
+	color: @var4
+
+.user__comment 
+	font-family: "Raleway", sans-serif
+	font-size: 18px
+	line-height: 21px
+	color: @var7
+
+.user__links 
+	display: flex
+
+.user__link.social__link--is-facebook 
+	background-image: url(..
+	background-size: cover
+	height: 39px
+	width: 39px
+
+.user__link.social__link--is-twitter 
+	background-image: url(..
+	background-size: cover
+	height: 39px
+	width: 39px
+
+.user__link.social__link--is-linkedin 
+	background-image: url(..
+	background-size: cover
+	height: 39px
+	width: 39px
+
+media (max-width: 1024px) 
+	margin: 0 auto
+	margin-top: 78px
+
+.person__card 
+	width: 25%
+
+.person__photo 
+	width: 95%
+
+.user__name 
+	font-size: 18px
+	line-height: 21px
+
+.user__job 
+	font-size: 14px
+	line-height: 16px
+
+.user__comment 
+	font-size: 14px
+	line-height: 16px
+
+.user__link.social__link--is-facebook 
+	height: 32px
+	width: 32px
+
+.user__link.social__link--is-twitter 
+	height: 32px
+	width: 32px
+
+.user__link.social__link--is-linkedin 
+	height: 32px
+	width: 32px
+
+media (max-width: 768px) 
+	margin: 0 auto
+	margin-top: 335px
+	flex-wrap: wrap
+
+.person__card 
+	width: 95%
+
+.person__photo 
+	max-width: 280px
+
+.user__name 
+	font-size: 18px
+	line-height: 21px
+
+.user__job 
+	font-size: 14px
+	line-height: 16px
+
+.user__comment 
+	font-size: 14px
+	line-height: 16px
+
+.user__links 
+	display: flex
+
+.testimonials 
+	max-width: 1200px
+	margin: 0 auto
+	margin-top: 115px
+	&__img 
+		max-width: 1200px
+		margin: 0 auto
+		display: flex
+		height: 490px
+	
+	&__photo 
+		width: 50%
+		background-image: url(..
+		background-size: cover
+	
+	&__bac 
+		width: 50%
+		background-color: @var8
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-wrap: wrap
+	
+	&__img 
+		margin: 0 auto
+	
+	&__photo 
+		width: 50%
+	
+	&__bac 
+		width: 50%
+		background-color: @var8
+	
+	&__img 
+		margin: 0 auto
+		display: flex
+		flex-wrap: wrap
+	
+	&__photo 
+		width: 95%
+	
+	&__bac 
+		width: 95%
+	
+
+.quote 
+	font-family: "Cardo"
+	font-style: italic
+	font-size: 36px
+	line-height: 49px
+	color: @var1
+	&__autor 
+		font-family: "Raleway"
+		font-weight: 700
+		font-size: 13px
+		line-height: 15px
+		color: @var1
+	
+	&__autor 
+		font-size: 12px
+		line-height: 14px
+	
+	&__autor 
+		font-size: 12px
+		line-height: 14px
+	
+
+.slider 
+	width: 12%
+	margin: 0 auto
+	margin-top: 25px
+	border: 1px solid @var9
+	position: relative
+	overflow: hidden
+
+.slide 
+	width: 12%
+	position: absolute
+	top: 0
+	left: 0
+	border: 1px solid @var9
+	&2 
+		width: 12%
+		position: absolute
+		top: 0
+		left: 0
+		border: 1px solid @var9
+		background: @var9
+	
+	&2 
+		width: 12%
+		position: absolute
+		top: 0
+		left: 0
+		border: 1px solid @var9
+		background: @var9
+	
+
+media (max-width: 1024px) 
+	margin: 0 auto
+
+.quote 
+	font-size: 24px
+	line-height: 32px
+
+.slider 
+	width: 12%
+	margin: 0 auto
+	margin-top: 25px
+	border: 1px solid @var9
+	position: relative
+	overflow: hidden
+
+.slide 
+	width: 12%
+	position: absolute
+	top: 0
+	left: 0
+	border: 1px solid @var9
+
+media (max-width: 768px) 
+	margin: 0 auto
+	margin-top: 35px
+
+.quote 
+	font-size: 24px
+	line-height: 32px
+
+.download 
+	max-width: 1200px
+	margin: 0 auto
+	padding: 0 15px
+	margin-top: 114px
+	flex-wrap: wrap
+	align-items: center
+	text-align: center
+	&__title 
+		font-family: "Raleway", sans-serif
+		font-weight: 500
+		font-size: 30px
+		line-height: 35px
+		margin: 0 auto
+		color: @var10
+	
+	&__subtitle 
+		font-family: "Raleway", sans-serif
+		font-weight: 700
+		font-size: 18px
+		line-height: 21px
+		margin: 5px auto
+		color: @var10
+	
+	&__title 
+		font-size: 24px
+		line-height: 28px
+	
+	&__subtitle 
+		font-size: 14px
+		line-height: 16px
+	
+
+.tab__download 
+	font-family: "Raleway", sans-serif
+	font-weight: 900
+	font-size: 24px
+	line-height: 28px
+	height: 80px
+	margin: 50px auto
+	color: @var1
+	background-color: @var4
+	cursor: pointer
+	width: 40%
+
+media (max-width: 1024px) 
+	margin: 0 auto
+	padding: 0 15px
+
+media (max-width: 768px) 
+	margin: 0 auto
+	margin-top: 77px
+
+.tab__download 
+	font-size: 18px
+	line-height: 21px
+
+footer 
+	margin: 0 auto
+	width: 100%
+	background-color: @var11
+	display: flex
+	margin-top: 114px
+	flex-wrap: wrap
+
+.location 
+	width: 33.33%
+	margin: 71px auto
+	&__title 
+		font-family: "Raleway", sans-serif
+		font-weight: 700
+		font-size: 18px
+		line-height: 21px
+		text-align: center
+		color: @var1
+	
+	&__subtitle 
+		font-family: "Raleway", sans-serif
+		font-size: 18px
+		line-height: 21px
+		display: flex
+		text-align: center
+		color: @var1
+		margin-top: 29px
+		padding-left: 30px
+	
+	&__title 
+		font-size: 14px
+		line-height: 16px
+	
+	&__subtitle 
+		font-size: 14px
+		line-height: 16px
+	
+	&__title 
+		font-size: 14px
+		line-height: 16px
+	
+	&__subtitle 
+		font-size: 14px
+		line-height: 16px
+		display: block
+		margin-left: auto
+		margin-right: auto
+	
+
+.social 
+	width: 33.33%
+	margin: 71px auto
+	&__title 
+		font-family: "Raleway", sans-serif
+		font-weight: 700
+		font-size: 18px
+		line-height: 21px
+		color: @var1
+		text-align: center
+	
+	&__link 
+		display: flex
+		justify-content: center
+		text-align: center
+		margin-left: 10px
+		&.social__link--is-facebook 
+			background-image: url(..
+			background-size: cover
+			height: 39px
+			width: 39px
+			margin-top: 48px
+		
+		&.social__link--is-twitter 
+			background-image: url(..
+			background-size: cover
+			height: 39px
+			width: 39px
+			margin-top: 48px
+		
+		&.social__link--is-linkedin 
+			background-image: url(..
+			background-size: cover
+			height: 39px
+			width: 39px
+			margin-top: 48px
+		
+		&.social__link--is-facebook 
+			height: 33px
+			width: 33px
+		
+		&.social__link--is-twitter 
+			height: 33px
+			width: 33px
+		
+		&.social__link--is-linkedin 
+			height: 33px
+			width: 33px
+		
+	
+	&__title 
+		font-weight: 700
+		font-size: 14px
+		line-height: 16px
+	
+	&__link 
+		display: flex
+		justify-content: center
+		text-align: center
+	
+	&__title 
+		font-size: 14px
+		line-height: 16px
+	
+	&__link 
+		display: flex
+		justify-content: center
+		text-align: center
+	
+
+.about 
+	width: 33.33%
+	margin: 71px auto
+	&__title 
+		font-family: "Raleway", sans-serif
+		font-weight: 700
+		font-size: 18px
+		line-height: 21px
+		text-align: center
+		align-items: center
+		color: @var1
+	
+	&__text 
+		font-family: "Raleway", sans-serif
+		font-size: 18px
+		line-height: 21px
+		text-align: center
+		align-items: center
+		color: @var1
+		padding-top: 28px
+	
+	&__title 
+		font-size: 14px
+		line-height: 16px
+	
+	&__text 
+		font-size: 14px
+		line-height: 16px
+	
+	&__title 
+		font-size: 14px
+		line-height: 16px
+	
+	&__text 
+		font-size: 14px
+		line-height: 16px
+	
+
+.copyright__wrapper 
+	margin: 0 auto
+	width: 100%
+
+.copyright 
+	background: @var12
+	width: 100%
+	&__title 
+		font-family: 'Raleway'
+		font-size: 18px
+		line-height: 21px
+		align-items: center
+		text-align: center
+		color: @var13
+	
+	&__wrapper 
+		margin: 0 auto
+		width: 100%
+	
+	&__title 
+		font-size: 14px
+		line-height: 16px
+	
+	&__wrapper 
+		margin: 0 auto
+		width: 100%
+	
+	&__title 
+		font-size: 14px
+		line-height: 16px
+	
+
+.colortext 
+	color: @var1
+
+media (max-width: 1024px) 
+	margin: 0 auto
+	margin-top: 78px
+
+.location 
+	width: 33.33%
+	margin: 71px auto
+
+.social 
+	width: 33.33%
+	margin: 71px auto
+
+.about 
+	width: 33.33%
+	margin: 71px auto
+
+media (max-width: 768px) 
+	margin: 0 auto
+	margin-top: 45px
+
+.location 
+	width: 95%
+	margin: 34px auto
+
+.social 
+	width: 95%
+
+.about 
+	width: 95%
+
