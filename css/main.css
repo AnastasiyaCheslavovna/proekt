@@ -723,7 +723,8 @@ h1 {
 
 @media (max-width: 1024px) {
     .testimonials {
-        margin: 0 auto;
+        margin: 78px auto;
+
     }
 
     .testimonials__img {
@@ -853,7 +854,7 @@ h1 {
 
 @media (max-width: 1024px) {
     .download {
-        margin: 0 auto;
+        margin: 78px auto;
         padding: 0 15px;
     }
 }
